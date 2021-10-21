@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-6 offset-3">
+    <form id= "loginForm" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <div class="card">
+      <div class="card-header">
+        <h1>Login to System</h1>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" ngModel name="email" required minlength="6" #email="ngModel" id="email" aria-describedby="emailHid" placeholder="Email">
+          <small id="emailHid" *ngIf="!email?.valid && (email?.dirty || email?.touched)" class="form-text text-muted">Email is invalid or empty</small>
+        </div>
+        <div class="form-group">
+          <label for="password">PassWord</label>
+          <input type="password" class="form-control" ngModel name="password" required minlength="6" #password="ngModel" id="password" aria-describedby="passwordHid" placeholder="Password">
+          <small *ngIf="!password?.valid && (password?.dirty || password?.touched)"
+          id="passwordHid" class="form-text text-muted">Password is invalid or empty</small>
+        </div>
+      </div>
+       <div class="card-footer text-center">
+         <button class="btn btn-primary">Login</button>
+         <button type="reset" class="btn btn-info">Reset</button>
+       </div>
+    </div>
+    </form>
+  </div>
+</div>

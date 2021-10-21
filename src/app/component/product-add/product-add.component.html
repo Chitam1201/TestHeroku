@@ -1,0 +1,28 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="productForm">
+<div class="card">
+  <div class="card-header">
+    Add New Product
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="productCode">Product Code: </label>
+      <input type="text" class="form-control" name="productCode"
+        formControlName="productCode"
+        id="productCode" aria-describedby="productCodeHid" placeholder="Product Code">
+      <small id="productCodeHid" *ngIf="!productForm.get('productCode')?.valid && productForm.get('productCode')?.touched"
+      class="form-text text-muted">Product code is required</small>
+    </div>
+    <div class="form-group">
+      <label for="productName">Product Name: </label>
+      <input type="text" class="form-control" name="productName"
+        formControlName="productName"
+        id="productName" aria-describedby="productNameHid" placeholder="Product Name">
+      <small id="productNameHid" *ngIf="!productForm.get('productname')?.valid && productForm.get('productName')?.touched"
+       class="form-text text-muted">Product is required</small>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    <button class="btn btn-primary">Save</button>
+  </div>
+</div>
+</form>
