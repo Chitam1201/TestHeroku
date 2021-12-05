@@ -1,7 +1,7 @@
 # ShopAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
-![image](https://imgur.com/5iOkAXs)
+<blockquote class="imgur-embed-pub" lang="en" data-id="5iOkAXs"><a href="https://imgur.com/5iOkAXs">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## Development server
 
