@@ -1,8 +1,6 @@
 # ShopAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
-<blockquote class="imgur-embed-pub" lang="en" data-id="5iOkAXs"><a href="https://imgur.com/5iOkAXs">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
